@@ -4,7 +4,7 @@ ______________ \  /\  /|\  /| ______________
 ______________  \/  \/ | \/ | ______________
 --Module Name:  top_tb.sv
 --Project Name: GitHub
---Data modified: 2015-09-17 10:36:54 +0800
+--Data modified: 2015-09-17 10:55:13 +0800
 --author:Young-ÎâÃ÷
 --E-mail: wmy367@Gmail.com
 ****************************************/
@@ -66,8 +66,8 @@ always@(posedge clock)begin:DATA_BLOCK
 //    gdata		= $urandom_range(0,16'hFFFF);
 //    bdata		= $urandom_range(0,16'hFFFF);
 	rdata		= cnt[2]?	16'hFF_FF	: 16'h00_00;
-    gdata		= cnt[1]?	16'hFF_FF	: 16'h00_00;
-    bdata		= cnt[0]?	16'hFF_FF	: 16'h00_00;
+	gdata		= cnt[1]?	16'hFF_FF	: 16'h00_00;
+	bdata		= cnt[0]?	16'hFF_FF	: 16'h00_00;
 	
 //	rdata		= 16'h00_00;
 //    gdata		= 16'hFF_FF;
@@ -93,7 +93,7 @@ end
 
 always@(ydata,cbdata,crdata)begin
 	Y_m		= ydata*1	;
-    Cb_m    = cbdata*1	;
+	Cb_m    = cbdata*1	;
 	Cr_m    = crdata*1	;
 end
 
@@ -163,7 +163,7 @@ end
 
 always@(outr,outg,outb)begin
 	R_m	= outr*1	;
-    G_m = outg*1	;
+	G_m = outg*1	;
 	B_m = outb*1	;
 end
 

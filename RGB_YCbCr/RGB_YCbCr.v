@@ -4,7 +4,7 @@ ______________ \  /\  /|\  /| ______________
 ______________  \/  \/ | \/ | ______________
 --Module Name:  RGB_YCbCr.v
 --Project Name: GitHub
---Data modified: 2015-09-17 10:36:54 +0800
+--Data modified: 2015-09-17 10:55:13 +0800
 --author:Young-ÎâÃ÷
 --E-mail: wmy367@Gmail.com
 ****************************************/
@@ -57,12 +57,12 @@ localparam [MSIZE-1:0]	  	M00p0_257		= 0.257 * 2**MSIZE,
 							M20p0_439       = 0.439 * 2**MSIZE;
 
 localparam [MSIZE-1:0]		M01p0_504		= 0.504 * 2**MSIZE,
-                            M11n0_291		= 0.291 * 2**MSIZE,
-                            M21n0_368		= 0.368 * 2**MSIZE;
+							M11n0_291		= 0.291 * 2**MSIZE,
+							M21n0_368		= 0.368 * 2**MSIZE;
 
 localparam [MSIZE-1:0]		M20p0_098		= 0.098 * 2**MSIZE,
-                            M21p0_439		= 0.439 * 2**MSIZE,
-                            M22n0_071		= 0.071 * 2**MSIZE;
+							M21p0_439		= 0.439 * 2**MSIZE,
+							M22n0_071		= 0.071 * 2**MSIZE;
 
 reg [DSIZE+MSIZE-1:0]	Rxp0_257,Rxn0_148,Rxp0_439;
 
